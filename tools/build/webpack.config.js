@@ -37,7 +37,8 @@ module.exports = (env) => {
     output: {
       path: join(curDir, paths.output.root),
       filename: join(paths.output.scripts, isProd ? '[name].bundle.js' : '[name].js'),
-      publicPath: config.public_path
+      publicPath: config.public_path,
+      libraryTarget: 'umd',
     },
     resolve: {
       extensions: ['.js', '.jsx', '.json' ]

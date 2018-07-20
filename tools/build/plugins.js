@@ -128,7 +128,7 @@ let bundleAnalyzerPlugin = (isProd) => {
 let hotPlugin = (isProd) => !isProd && new webpack.HotModuleReplacementPlugin();
 
 let plugins = [
-  extractVendor,
+  //extractVendor,
   extractText,
   loaderOptions,
   uglifyJs,
