@@ -31,11 +31,12 @@ module.exports = (env) => {
     },
     watch: !isProd && true,
     entry: {
-      client: join(curDir, paths.client.entry_script)
+      client: join(curDir, paths.client.entry_script),
+      plug: join(curDir, 'src/plug.jsx')
     },
     output: {
       path: join(curDir, paths.output.root),
-      filename: join(paths.output.scripts, isProd ? '[name].[chunkhash:12].js' : '[name].js'),
+      filename: join(paths.output.scripts, isProd ? '[name].bundle.js' : '[name].js'),
       publicPath: config.public_path
     },
     resolve: {

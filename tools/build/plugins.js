@@ -134,7 +134,7 @@ let plugins = [
   uglifyJs,
   definePlugin,
   //manifestRevision,
-  revReplace,
+  //revReplace,
   buildMessage,
   //dllPlugin,
   namedModulesPlugin,

@@ -2,7 +2,7 @@
   "name": "plug-play-test",
   "version": "1.0.0",
   "description": "testing the viability of a standalone cum pluggable application",
-  "main": "index.js",
+  "main": "build/javascripts/plug.bundle.js",
   "scripts": {
     "build:dev": "rm -rf build; NODE_ENV=development node tools/build/index.js",
     "build:staging": "rm -rf build; NODE_ENV=staging node tools/build/index.js",
