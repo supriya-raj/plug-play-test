@@ -1,0 +1,6 @@
+build/*
+node_modules/*
+**/.DS_Store
+**/._.DS_Store
+config/secrets.js
+coverage/*
