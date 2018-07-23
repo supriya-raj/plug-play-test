@@ -59,9 +59,7 @@ let styleLoader = () => 'style-loader';
 
 let extractPluginLoader = (isProd) => ({
   test: /\.s?css$/,
-  use: isProd? ExtractTextPlugin.extract({
-    use: parseArr([ cssLoader, postCssLoader, sassLoader ])(isProd)
-  }): parseArr([styleLoader, postCssLoader, sassLoader])(isProd)
+  use: parseArr([styleLoader, postCssLoader, sassLoader])(isProd)
 });
 
 module.exports = parseArr([

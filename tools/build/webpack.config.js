@@ -40,6 +40,13 @@ module.exports = (env) => {
       publicPath: config.public_path,
       libraryTarget: 'umd',
     },
+    externals: {
+      'superagent': {
+        commonjs2: 'superagent',
+        commonjs: 'superagent',
+        amd: 'superagent'
+      }
+    },
     resolve: {
       extensions: ['.js', '.jsx', '.json' ]
     },

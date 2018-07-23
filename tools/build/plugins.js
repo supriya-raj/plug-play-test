@@ -131,7 +131,7 @@ let plugins = [
   //extractVendor,
   extractText,
   loaderOptions,
-  uglifyJs,
+  //uglifyJs,
   definePlugin,
   //manifestRevision,
   //revReplace,
